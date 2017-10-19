@@ -1,6 +1,6 @@
 @import "http://fonts.googleapis.com/css?family=Open+Sans:400,600,800";
 @import "http://fonts.googleapis.com/earlyaccess/droidarabickufi.css";
-@import "../vendor/bootstrap/css/bootstrap-ar.css";
+@import "https://rawgit.com/eslammax/eslam-aa/master/bootstrap.min.css";
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @import "https://rawgit.com/eslammax/eslam-aa/master/owl.carousel.css";
 @import "https://rawgit.com/eslammax/eslam-aa/master/owl.theme.css";
