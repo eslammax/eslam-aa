@@ -465,3 +465,31 @@ textarea.form-control {
     border: 0;
     font-size: 100px;
 }
+
+.item-page strong {
+  color: #C01113;
+  text-align: center;
+  margin: auto;
+  display: table;
+  overflow: hidden;
+}
+table tbody tr td:first-child {
+  padding: 0!important;
+  font-weight: bold;
+  color: #5bada5;
+}
+table.kalimatdalaliya {
+  float: left;
+  width: 50%;
+}
+input[type="button"] {
+  border: 1px solid #500608;
+  background-color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  background: radial-gradient(ellipse at top,#C01113,#640C0E 80%,rgb(55, 0, 0));
+  margin-top: 15px;
+  color: #fff;
+  font-family: 'Moussa-font';
+  font-size: 20px;
+}
