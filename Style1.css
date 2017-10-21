@@ -151,13 +151,13 @@ hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}
 body .no-padding{padding-left:0!important;padding-right:0!important}
 ul{padding:0;margin:0}
 a{text-decoration:none;transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-webkit-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;cursor:pointer;outline:0!important}
-@font-face{font-family:'NeoSansArabic';src:url('../fonts/NeoSansArabic.eot');src:url('../fonts/NeoSansArabic.eot?#iefix') format('embedded-opentype'),url('../fonts/NeoSansArabic.woff') format('woff'),url('../fonts/NeoSansArabic.ttf') format('truetype'),url('../fonts/NeoSansArabic.otf') format('opentype'),url('../fonts/NeoSansArabic.svg#NeoSansArabic-Regular') format('svg');font-weight:400;font-style:normal;font-stretch:normal;unicode-range:U+0020-FEFC}
-body{font-size:14px;line-height:1.42857143;color:RGB(51,51,51);background-color:rgb(29,32,49);font-family:'NeoSansArabic'}
+@font-face{font-family:'Lemonada';src:url('https://fonts.googleapis.com/css?family=Lemonada');src:url('https://fonts.googleapis.com/css?family=Lemonada') format('embedded-opentype'),url('https://fonts.googleapis.com/css?family=Lemonada') format('woff'),url('https://fonts.googleapis.com/css?family=Lemonada') format('truetype'),url('https://fonts.googleapis.com/css?family=Lemonada') format('opentype'),url('https://fonts.googleapis.com/css?family=Lemonada') format('svg');font-weight:400;font-style:normal;font-stretch:normal;unicode-range:U+0020-FEFC}
+body{font-size:14px;line-height:1.42857143;color:RGB(51,51,51);background-color:rgb(29,32,49);font-family:'Lemonada'}
 .box-title{z-index:1;position:relative;margin-top:-1px;margin-bottom:-1px}
 .box-title,.contents.widget-content{z-index:999;padding:0;-webkit-border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0;background-color:rgb(29,29,29);-webkit-box-shadow:inset 0 1px 1px rgba(255,255,255,.2);-moz-box-shadow:inset 0 1px 1px rgba(255,255,255,.2);box-shadow:inset 0 1px 1px rgba(255,255,255,.2);border:1px solid RGB(0,0,0);background-image:-webkit-linear-gradient(ellipse farthest-corner at center 0,#31a2a6 -150%,#333240 45%,#333240 85%);background-image:-moz-linear-gradient(ellipse farthest-corner at center 0,#31a2a6 -150%,#333240 45%,#333240 85%);background-image:-o-linear-gradient(ellipse farthest-corner at center 0,#31a2a6 -150%,#333240 45%,#333240 85%);background-image:radial-gradient(ellipse farthest-corner at center 0,#31a2a6 -10%,RGB(51,50,64) 150%,RGB(51,50,64) 10%);position:relative}
 #alba_sports_events .box-title{text-align:center}
 .box-title .title{font-size:18px;text-transform:uppercase;height:43px;z-index:99999;margin:0;color:rgb(255,255,255);font-weight:800}
-.box-title .title a{height:42px;line-height:40px;position:relative;color:rgb(255,255,255);font-family:'NeoSansArabic';display:inline-block;padding:0 16px;font-weight:700}
+.box-title .title a{height:42px;line-height:40px;position:relative;color:rgb(255,255,255);font-family:'Lemonada';display:inline-block;padding:0 16px;font-weight:700}
 .contents.widget-content{padding:15px}
 .alba_sports_events-event_item{text-align:center;width:100%;display:block;overflow:hidden;margin-bottom:10px;padding:2px 10px 12px;background:url(../img/tlistcup.jpg) right bottom no-repeat RGB(33,33,41);position:relative}
 .event_inner{padding:10px 0}
@@ -173,7 +173,7 @@ body{font-size:14px;line-height:1.42857143;color:RGB(51,51,51);background-color:
 .event_mask_inner{justify-content:center;align-items:center;height:100%;background:rgba(0,0,0,0.5);display:flex}
 .alba_sports_events-event_mask_inner_text{margin-top:0!important;background-color:RGB(255,46,46)!important;color:rgb(255,255,255)!important;padding:5px 30px;font-size:14px!important;line-height:22px;text-decoration:none;z-index:555}
 .alba_sports_events-event_item:hover .alba_sports_events-event_mask{display:block}
-.event_status_inner_live{padding:2px 15px;border-radius:4px;background-color:rgb(210,44,46);border:1px solid rgb(210,44,46);line-height:15px;font-size:13px;font-family:Greta_Arabic_Regular;color:rgb(255,255,255)!important}
+.event_status_inner_live{padding:2px 15px;border-radius:4px;background-color:rgb(210,44,46);border:1px solid rgb(210,44,46);line-height:15px;font-size:13px;font-family:Lemonada;color:rgb(255,255,255)!important}
 .events-teams_vs{width:50px;height:50px;border-radius:100%;border:1px solid RGB(153,38,38);font:normal 24px/50px tahoma}
 .vent_status_inner_ended{margin-top:-20px;margin-bottom:6px;color:RGB(255,46,46)!important;font-size:12px}
 @media screen and (max-width:480px){
