@@ -1,3 +1,4 @@
+<style>
 .blog-feeds,.post-feeds,#backlinks-container,.status-msg-wrap,#blog-pager,.topads h2, .bottomads h2{display:none;}
 .section,.widget,.widget ul,.widget li,.post-footer-line{margin:0;padding:0}
 body {
@@ -332,8 +333,8 @@ box-sizing: border-box;
 #content .section{display:none}
 #tabs #content #tab1{display:block}
 
---></style>
-<style id='template-skin-1' type='text/css'><!--
+</style>
+<style id='template-skin-1' type='text/css'>
 /*===============
 Layout
 ===============*/
@@ -354,7 +355,7 @@ width: 20px;
 }
 #layout .editlink {display: block; font-size: 0; height: 0; width: 0;}
 #layout #ContactForm1 .widget-content {background-color: #bbb;}
---></style>
+</style>
 <script type='text/javascript'>
 //<![CDATA[
 $(document).ready(function(){$("#content").find("[id^='tab']").hide();$("#tabs li:first").attr("id","current");$("#content #tab1").fadeIn();$('#tabs a').click(function(e){e.preventDefault();if($(this).closest("li").attr("id")=="current"){return;}
