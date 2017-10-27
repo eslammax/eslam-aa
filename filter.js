@@ -1,1 +1,0 @@
-$(function(){$("input#filter").keyup(function(){var e=$(this).val().toUpperCase();$.each($("ul.channels-list li"),function(i,n){var t=$(n).find("a").text();t.toUpperCase().indexOf(e)>-1?$(n).show():$(n).hide()})}),$(".categories-filter").selectmenu({change:function(e,i){window.location.href=i.item.value}})});
