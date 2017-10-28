@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>مباريات اليوم</title>
+
+<link href='//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+<style type='text/css'>
+.gadwal * {box-sizing: border-box;}
+.yom,.ghms,.alfoter {height: 54px;line-height: 50px;}
+.timeing {height: 45px;line-height: 41px;}
+.gadwal {
+  background-color: #f8f9f9;
+  display: block;
+  font: bold 16px georgia;
+  margin: 10px auto;
+  width: 98%;
+}
+.gadwal a {text-decoration: none; transition: all 0.3s ease 0s;}
+.yom,.alfoter {
+  background-color: #9b0a0a;
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2) inset;
+  display: block;
+  text-align: center;
+  color:#fff;
+}
+.yom,.timeing,.ghms {border-bottom: 4px solid #000;}
+.ghms a {
+  background-color: #f1f2f2;
+  color: #444;
+  float: right;
+  text-align: center;
+  width: 50%;
+}
+.ghms a:first-child {border-left: 4px solid #000;}
+.timeing span {
+  background-color: #9b0a0a;
+  border-left: 2px solid #000;
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2) inset;
+  color: #fff;
+  float: right;
+  text-align: center;
+  width: 33.333%;
+}
+.timeing span:last-child {border: 0 none;}
+.mobara {
+  border-bottom: 4px solid #000;
+  display: block;
+  height: 94px;
+  margin: 8px auto;
+  position: relative;
+}
+.fullink {
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 5;
+}
+.mobarain {margin:0 13px;}
+.mobara img {
+  background-color: #f1f2f2;
+  border-bottom: 2px solid #ddd;
+  height: 50px;
+  padding: 4px;
+  position: absolute;
+  width: 50px;
+}
+.mpart1 strong {
+  background-color: #9b0a0a;
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2) inset;
+  color: #fff;
+  height: 50px;
+  margin-right: -50px;
+  position: absolute;
+  right: 50%;
+  text-align: center;
+  width: 100px;
+  z-index: 1;
+}
+.mpart1 strong2 {
+  background-color: #029c5d;
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2) inset;
+  color: #fff;
+  height: 50px;
+  margin-right: -50px;
+  position: absolute;
+  right: 50%;
+  text-align: center;
+  width: 100px;
+  z-index: 1;
+}
+.mpart1 {
+  position: relative;
+  height:48px;
+  line-height:48px;
+}
+.mpart1 span {
+  background-color: #f1f2f2;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05) inset;
+  float: right;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+/*Yameen*/
+.yamparent {float: right; padding-left: 30px; width: 50%;position: relative;z-index: 2;}
+.yameen img {right: -13px;  transform: skewX(30deg);}
+.yameen {border-radius: 8px 0 0; transform: skewX(-30deg);}
+.yameen .fname {transform: skewX(30deg);}
+/*Yasar*/
+.yasparent {float: left; padding-right: 30px; width: 50%; position: relative;z-index: 2;}
+.yasar img {left: -13px;  transform: skewX(-30deg);}
+.yasar {border-radius: 0 8px 0; transform: skewX(30deg);}
+.yasar .fname {transform: skewX(-30deg);}
+/*Part2*/
+.mpart2 {padding: 0 100px; font-size: 14px;}
+.mpart2 i {margin-left: 5px;}
+.mpart2 span {
+  background-color: #9b0a0a;
+  border-left: 1px solid #000;
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2) inset;
+  color: #fff;
+  float: right;
+  height: 36px;
+  line-height: 36px;
+  position: relative;
+  text-align: center;
+  width: 33.3%;
+}
+.mpart2 .thales {border: 0 none;}
+.awal::before,.thales::before  {
+  background-color: #9b0a0a;
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2) inset;
+  content: "";
+  height: 36px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+.awal::before {transform: skew(-20deg); right: -12px; border-radius: 0 0 8px;}
+.thales::before {transform: skew(20deg); left: -12px; border-radius: 0 0 0 8px;}
+@media screen and (max-width : 700px) {
+.thales {display:none;}
+.mpart2 {padding: 0 60px;}
+.mpart2 span {width:50%;}
+.thany::before  {
+  background-color: #9b0a0a;
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2) inset;
+  content: "";
+  height: 36px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+  transform: skew(20deg); 
+  left: -12px;
+  border-radius: 0 0 0 8px;
+}
+}
+@media screen and (max-width : 500px) {
+.gadwal {font-size:14px;}
+.mpart2 {font-size:12px;}
+.mpart1 {line-height: 30px;}
+.mobarain {margin: 0 5px;}
+.yamparent {padding-left:20px;}
+.yasparent {padding-right:20px;}
+.mobara {height: 157px;}
+.mpart2 {padding: 0 25px;}
+.yameen {transform: skewX(-5deg);}
+.yasar {transform: skewX(5deg);}
+.yameen .fname {transform: skewX(5deg);}
+.yasar .fname {transform: skewX(-5deg);}
+.mobara img {position:relative; display:block; margin:5px auto; background:transparent; border:0; padding:0;}
+.yameen img {transform: skewX(5deg); right:0;}
+.yasar img {transform: skewX(-5deg); left:0;}
+.mpart1 strong {height: 36px; line-height: 36px; top: 30px; width:60px;margin-right: -30px;}
+.mpart1 strong2 {height: 36px; line-height: 36px; top: 30px; width:60px;margin-right: -30px;}
+}
+  </style>
+</head>
+<body>
+  
+  
+  
+<div class='gadwal'>
+<a class='yom' href="http://www.as-goal.com">جدول اهم مباريات اليوم</a>
+<div class='ghms'>
+<a href="http://www.as-goal.com/2017/08/live-tomorrow.html">مباريات الغد</a>
+<a href="http://www.as-goal.com/2017/08/live-yesterday.html">مباريات الامس</a>
+</div>
+
+
+
+
+<div class='timeing'>
+<span>الجمعه</span>
+<span>توقيت مكه</span>
+<span>10 / 27</span>
+</div>
+
+</div>
+
+
+
+
+<div style="text-align: center;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- متجاوب as -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5861593896676538"
+     data-ad-slot="6659704606"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+
+<div class='gadwal'>
+
+
+
+
+<!--كود المباراة-->
+<div class='mobara'>
+<a class='fullink' href='http://www.as-goal.com/p/e1.html'></a>
+<div class='mobarain'>
+<div class='mpart1'>
+<div class='yamparent'>
+<span class='yameen'>
+<img src="https://3.bp.blogspot.com/-GXuQh4nAahA/WQIER_553NI/AAAAAAAAFY8/pXNMWewNn7sMO2UVTdFdUpcHimvT5nw9wCLcB/s1600/%25D8%25A7%25D9%2584%25D9%2585%25D8%25B5%25D8%25B1%25D9%258A.png"/>
+<div class='fname'>المصري</div>
+</span>
+</div>
+<strong2>1 - 2</strong2>
+<div class='yasparent'>
+<span class='yasar'>
+<img src="https://3.bp.blogspot.com/-oUGW3GaoDVc/WQID9hV-KMI/AAAAAAAAFYs/jdzpuljdQ3IIteBxJdBO79I6BdzP5iu-gCLcB/s1600/%25D8%25A7%25D9%2584%25D8%25A7%25D8%25B3%25D9%2585%25D8%25A7%25D8%25B9%25D9%258A%25D9%2584%25D9%258A.png"/>
+<div class='fname'>الاسماعيلي</div>
+</span>
+</div>
+</div>
+
+<div class='mpart2'>
+<span class='awal'>
+<i aria-hidden='true' class='fa fa-clock-o'></i>
+<b>انتهت المباراة</b>
+</span>
+<span class='thany'>
+<i aria-hidden='true' class='fa fa-futbol-o'></i>
+<b>شاهد الاهداف</b>
+</span>
+<span class='thales'>
+<i aria-hidden='true' class='fa fa-desktop'></i>
+<b>انتهت المباراة</b>
+</span>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<!--كود المباراة-->
+<div class='mobara'>
+<a class='fullink' href='http://www.as-goal.com/p/0312.html'></a>
+<div class='mobarain'>
+<div class='mpart1'>
+<div class='yamparent'>
+<span class='yameen'>
+<img src="https://lh3.googleusercontent.com/-BvUwCIP9F08/WbkqBJvkWgI/AAAAAAAAGWw/gz5myDkYaxs7kbXA62_I7bqTPPaAbrI7ACLcBGAs/h120/%25D9%2585%25D8%25A7%25D9%258A%25D9%2586%25D8%25B2.png"/>
+<div class='fname'>ماينز</div>
+</span>
+</div>
+<strong2>1 - 1</strong2>
+<div class='yasparent'>
+<span class='yasar'>
+<img src="https://lh3.googleusercontent.com/-C-ujJMk-Spc/WZRm-V8u03I/AAAAAAAAGLQ/T49SmL1t3YMgfycAsGBLqQCUUfcrhjfCwCLcBGAs/h120/%25D9%2581%25D8%25B1%25D8%25A7%25D9%2586%25D9%2583%25D9%2581%25D9%2588%25D8%25B1%25D8%25AA.png"/>
+<div class='fname'>فرانكفورت</div>
+</span>
+</div>
+</div>
+
+<div class='mpart2'>
+<span class='awal'>
+<i aria-hidden='true' class='fa fa-clock-o'></i>
+<b>انتهت المباراة</b>
+</span>
+<span class='thany'>
+<i aria-hidden='true' class='fa fa-futbol-o'></i>
+<b>شاهد الاهداف</b>
+</span>
+<span class='thales'>
+<i aria-hidden='true' class='fa fa-desktop'></i>
+<b>انتهت المباراة</b>
+</span>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<!--كود المباراة-->
+<div class='mobara'>
+<a class='fullink' href='http://www.as-goal.com/p/0313.html'></a>
+<div class='mobarain'>
+<div class='mpart1'>
+<div class='yamparent'>
+<span class='yameen'>
+<img src="https://4.bp.blogspot.com/-7jAKbhSaR3o/WQIDXjAN9tI/AAAAAAAAFYY/Fv1U8eWPwuwGxdFZUYf9KR9b2UmmQ5SEwCLcB/s1600/%25D8%25A8%25D8%25A7%25D8%25B1%25D9%258A%25D8%25B3.png"/>
+<div class='fname'>باريس.س.ج</div>
+</span>
+</div>
+<strong2>3 - 0</strong2>
+<div class='yasparent'>
+<span class='yasar'>
+<img src="https://lh3.googleusercontent.com/-vU9V_4eqB-c/Wez_Ys1xHsI/AAAAAAAAGpc/vbGUT_Ns8KcdmGZqBOgG6IwqQw6JT79vgCLcBGAs/h120/%25D9%2586%25D9%258A%25D8%25B3.png"/>
+<div class='fname'>نيس</div>
+</span>
+</div>
+</div>
+
+<div class='mpart2'>
+<span class='awal'>
+<i aria-hidden='true' class='fa fa-clock-o'></i>
+<b>انتهت المباراة</b>
+</span>
+<span class='thany'>
+<i aria-hidden='true' class='fa fa-futbol-o'></i>
+<b>شاهد الاهداف</b>
+</span>
+<span class='thales'>
+<i aria-hidden='true' class='fa fa-desktop'></i>
+<b>انتهت المباراة</b>
+</span>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
