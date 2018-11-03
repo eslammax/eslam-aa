@@ -1,0 +1,104 @@
+
+<head>
+
+<SCRIPT> 
+ return false; 
+} 
+function noleftclick(e)     
+{ 
+    if (window.Event)     
+    { 
+        if (e.which == 2 || e.which == 3) 
+            return false; 
+    } 
+    else 
+        if (event.button == 2 || event.button == 1) 
+        { 
+            event.cancelBubble = true 
+            event.returnValue = false; 
+            return false; 
+        } 
+} 
+document.oncontextmenu = nocontextmenu;         
+document.onmousedown = noleftclick;     
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.1"> 
+ 
+        function right(e) { 
+            if (navigator.appName == 'Netscape' &&  
+                (e.which == 3 || e.which == 2)) 
+            return false; 
+                else if (navigator.appName == 'Microsoft Internet Explorer' &&  
+                (event.button == 2 || event.button == 3)) { 
+                alert(".:H.I.G.H.S.E.C.U.R.I.T.Y:."); 
+            return false; 
+        } 
+            return true; 
+        } 
+        document.onmousedown=right; 
+        document.onmouseup=right; 
+        if (document.layers) window.captureEvents(Event.MOUSEDOWN); 
+        if (document.layers) window.captureEvents(Event.MOUSEUP); 
+        window.onmousedown=right; 
+        window.onmouseup=right; 
+</script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js">
+   <!-- HIGH SECURITY --> 
+    <!-- This script and many more are available free online at --> 
+    <!-- The JavaScript Source!! http://javascript.internet.com --> 
+    <!-- Begin 
+</script>
+<script type="text/javascript">
+    //  End --> 
+
+function mischandler(){
+return false;
+}
+
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+var isCtrl = false;
+    document.onkeyup=function(e)
+    {
+    if(e.which == 17)
+    isCtrl=false;
+    }
+
+    document.onkeydown=function(e)
+    {
+    if(e.which == 17)
+    isCtrl=true;
+    if((e.which == 85) || (e.which == 67) && isCtrl == true)
+    {
+    // alert(â€کKeyboard shortcuts are cool!â€™);
+    return false;
+    }
+    }
+
+
+</script>
+</head>
+
+
+<body bgcolor="#000000" topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+
+
+  <div id="player"></div>
+  <script>
+    var player = new Clappr.Player({source: "https://secure-playlist.livestream.com/streams/27911757_8440025_lsiohbvbbfh19opij9j_1/media/27911757_8440025_lsiohbvbbfh19opij9j_1@2756000pb.m3u8?dw=14400&token=1541443870_a17fad00efaa0f783d4685447eb01a04fe5fe4d6&ts=1541268000", parentId: "#player"
+
+,
+position: 'top-right' ,mediacontrol: {seekbar: "#E113D3", buttons: "#66B2FF"}, width: '100%',
+        height: '100%'
+
+
+
+});
+  </script>
+</body>
